@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花藝教室/運送及付款</title>
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 引用 Bootstrap 5 的 CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <!--引用googlefont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playwrite+CO+Guides&family=Playwrite+DE+VA+Guides&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, "Microsoft JhengHei", "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="header bg-primary py-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <div class="order-2 order-md-1">
+                        <a class="navbar-brand " href="#">花藝教室</a>
+                    </div>
+                    <div class="order-1 order-md-2">
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="order-3 order-md-4">
+                        <a class="nav-link" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"
+                                style="color:var(--textColor)"></i></a>
+                    </div>
+                    <div class="collapse navbar-collapse order-4 order-md-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-3">
+                                <a class="nav-link active  text-color" aria-current="page" href="index.html">首頁</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-color" href="shop.html">商店</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-color" href="login.html">登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="container my-3" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <div class="row d-flex flex-column-reverse flex-md-row g-3">
+            <div class="col-md-8 bg-primary">
+                <h1 class="p-2  h1-custom">運送及付款資訊</h1>
+                <div>
+                    <form action="invoice.html" method="GET" class="needs-validation" novalidate>
+                        <div class="row p-2">
+                            <div class="col-12 mb-2">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="name" class="form-label">收件人姓名</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="name" type="text" placeholder=" chien" aria-label="name"
+                                            class="form-control" required>
+                                        <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="phone" class="form-label">收件人電話</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="phone" type="text" placeholder=" 08-1234567" aria-label="電話"
+                                            class="form-control" required>
+                                        <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="email" class="form-label">電子郵件</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="email" type="email" placeholder=" flowerart@gmail.com"
+                                            aria-label="信箱" class="form-control" required>
+                                        <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="address" class="form-label">收件人地址</label>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" placeholder=" 苗栗縣" class="form-control" required>
+                                                <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder=" 烏頭鄉" class="form-control" required>
+                                                <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <input type="text" placeholder=" 飛鳳3號" aria-label="address"
+                                                    class="form-control" required>
+                                                <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row mb-2">
+                                    <div class="col-auto">
+                                        <label for="credit" class="form-label">信用卡卡號</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="credit" type="text" placeholder=" 0000-0000-0000-0000"
+                                            aria-label="credit" class="form-control" required>
+                                        <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="lastName" class="form-label">持卡人姓氏</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="lastName" type="text" placeholder=" chien" aria-label="姓氏"
+                                            class="form-control" required>
+                                        <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="firstName" class="form-label">名字</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="firstName" type="text" placeholder=" joy" aria-label="名字"
+                                            class="form-control" required>
+                                        <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="month" class="form-label">信用卡月份</label>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select" id="month">
+                                            <option selected>選擇</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                            <option value="7">07</option>
+                                            <option value="8">08</option>
+                                            <option value="9">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="date" class="form-label">日期</label>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select" id="date">
+                                            <option selected>選擇</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                            <option value="7">07</option>
+                                            <option value="8">08</option>
+                                            <option value="9">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="check" class="form-label">檢查碼三碼</label>
+                                    </div>
+                                    <div class="col">
+                                        <input id="check" type="text" placeholder=" ＊＊＊" aria-label="check"
+                                            class="form-control" required>
+                                        <div class="invalid-feedback">請輸入有效的資訊。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100 mt-4">下一步</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card rounded-0">
+                    <div class="card-header bg-primary h2 rounded-0">
+                        訂單摘要
+                    </div>
+                    <div class="list-group px-2">
+                        <table class="table table-deco">
+                            <tbody>
+                                <tr>
+                                    <td class="text-start">小計</td>
+                                    <td class="text-end">$ 2480</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">運費</td>
+                                    <td class="text-end">$ 120</td>
+                                </tr>
+                                <tr style="font-size:20px; font-weight:600;">
+                                    <td class="text-start">總計</td>
+                                    <td class="text-end">$ 2600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card rounded-0 mt-3">
+                    <div class="card-header bg-primary h2 rounded-0">
+                        購物清單
+                    </div>
+                    <table class="table align-middle table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <img src="https://images.plurk.com/2E969OU59GTCbMuBRBEnPn.png"
+                                        style="width: 90px;height:90px;object-fit: cover;">
+                                    <span>進階設計</span>
+                                </td>
+                                <td>1 件</td>
+                                <td class="text-end">$ 1760</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>
+                                    <img src="https://images.plurk.com/7eRU3Ktx6QiL3YbAgdIOt1.png"
+                                        style="width: 90px;height:90px;object-fit: cover;">
+                                    <span>花開如夢</span>
+                                </td>
+                                <td>1 件</td>
+                                <td class="text-end">$ 720</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container-fluid" style="background-color:var(--sakuraDark)">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h4 class="m-0 mb-2 mb-md-0">訂閱花藝教室的郵件</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="d-flex">
+                            <label for="Email" class="form-control rounded-0 border-0" style="width:40px;"><i
+                                    class="fa-solid fa-envelope"></i></label>
+                            <input class="form-control rounded-0 border-0" type="email" id="Email" placeholder="輸入電子郵件"
+                                aria-label="Email">
+                            <button class="btn btn-warning rounded-0 border-0" type="submit"><i
+                                    class="fa-solid fa-arrow-right" style="color:white"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-2" style="background-color:var(--sakuraPink)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="playwrite-de-va-guides-regular">Flower Art classroom</h3>
+                        </div>
+                        <ul class="list-unstyled ">
+                            <li><a href="tel:07-1234-5678" title="電話"
+                                    class="text-decoration-none link-color">07-1234-5678</a></li>
+                            <li><a href="mailto:FlowerArt @email.com" title="Email"
+                                    class="text-decoration-none link-color">FlowerArt @email.com</a></li>
+                            <li><a href="#" title="地址" class="text-decoration-none link-color">362 苗栗縣頭屋鄉飛鳳3號</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 vertical-content text-end text-md-start">
+                        <h3 class=""
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;line-height: 2.5rem;">
+                            每天都是<br>　　　送花的好日子</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-secondary">
+            <div class="container">
+                <div class="d-flex justify-content-between py-3">
+                    <div>
+                        <a href="#" title="instagram"><i class="fa-brands fa-instagram fa-lg pe-2 link-color"></i></a>
+                        <a href="#" title="twitter"><i class="fa-brands fa-twitter fa-lg link-color"></i></a>
+                    </div>
+                    <small class="text-color">© 2025 FlowerArt* All Rights Reserved</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 引用 Bootstrap 的 JavaScript（包含 Popper.js） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--custom JS -->
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
