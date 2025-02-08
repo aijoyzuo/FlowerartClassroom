@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花藝教室/商店</title>
+    <meta property="og:description" content="提供花藝教學與花圈" />
+    <meta property="og:image" content="https://images.plurk.com/5giKSM1xXiBUfhI8BK5PKJ.jpg  ">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" href="icon_result.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 引用 Bootstrap 5 的 CSS -->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!--引用googlefont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playwrite+CO+Guides&family=Playwrite+DE+VA+Guides&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, "Microsoft JhengHei", "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="header bg-primary py-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <div class="order-2 order-md-1">
+                        <a class="navbar-brand " href="#">花藝教室</a>
+                    </div>
+                    <div class="order-1 order-md-2">
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="order-3 order-md-4">
+                        <a class="nav-link" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"
+                                style="color:var(--textColor)"></i></a>
+                    </div>
+                    <div class="collapse navbar-collapse order-4 order-md-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-3">
+                                <a class="nav-link active  text-color" aria-current="page" href="index.html">首頁</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-color" href="#">商店</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link text-color" href="login.html">登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="container my-3">
+        <div class="shop-bg-image d-flex">
+            <div class="vertical-content">
+                <h3 class="p-2 shop-slogan" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;line-height: 2.5rem;">
+                    送花，<br>　　是不需要理由的。</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-3 shop-menu">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card sticky-top">
+                    <div class="card-header bg-primary">
+                      商品類別
+                    </div>
+                    <div class="list-group list-group-flush">
+                      <a class="list-group-item list-group-item-action active" id="all-products-tab" href="#">所有商品(10)</a>
+                      <a class="list-group-item list-group-item-action " data-bs-toggle="list" href="#pane-1">花工作坊(4)</a>
+                      <a class="list-group-item list-group-item-action " data-bs-toggle="list" href="#pane-2">人氣推薦(3)</a>
+                      <a class="list-group-item list-group-item-action " data-bs-toggle="list" href="#pane-3">季節花束(3)</a>
+                    </div>
+                    <div class="card-footer bg-secondary">
+                        學員作品
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="pane-1">
+                        <section class="container items workship">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100 d-flex">
+                                        <div class="recommend">花工作坊</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/459h5WDmoUC2yIQMhO0ahD.png" class="item-bg-cover"
+                                            alt="入門基礎">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">入門基礎</div>
+                                                <strong class="col-6 card-text">$ 1600</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="入門基礎" data-bs-price="$1600">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="recommend">花工作坊</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/2E969OU59GTCbMuBRBEnPn.png" class="item-bg-cover"
+                                            alt="進階設計">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">進階設計</div>
+                                                <strong class="col-6 card-text">$ 1760</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="進階設計" data-bs-price="$1760">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="recommend">花工作坊</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/2Yxo1byGMs2uvaWVe9DrDh.png  " class="item-bg-cover"
+                                            alt="專業技法">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">專業技法</div>
+                                                <strong class="col-6 card-text">$ 1900</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="專業技法"  data-bs-price="$1900">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="recommend">花工作坊</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/J64tFgi9KJYmvoRvCwG42.png" class="item-bg-cover"
+                                            alt="大師藝境">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">大師藝境</div>
+                                                <strong class="col-6 card-text">$ 2900</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="大師藝境"  data-bs-price="$2900">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="pane-2">
+                        <section class="container items popular">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100 d-flex">
+                                        <div class="recommend">人氣推薦</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/7tTrGtIsnW5IlfUpHwWDiQ.png " class="item-bg-cover"
+                                            alt="溫馨小宅">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">溫馨小宅</div>
+                                                <strong class="col-6 card-text">$ 600</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="溫馨小宅" data-bs-price="$600">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="recommend">人氣推薦</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/7tAbEH4CsVCoSRzWFnVN2T.png " class="item-bg-cover"
+                                            alt="文青共居">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">文青共居</div>
+                                                <strong class="col-6 card-text">$ 760</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="文青共居" data-bs-price="$760">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="recommend">人氣推薦</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/3aq9JvuKrTduXJPTCfQmnk.png " class="item-bg-cover"
+                                            alt="典雅豪宅">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">典雅豪宅</div>
+                                                <strong class="col-6 card-text">$ 900</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="典雅豪宅"  data-bs-price="$900">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                   
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="pane-3">
+                        <section class="container items seasonal">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100 d-flex">
+                                        <div class="recommend">季節花束</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/2mepmLOTpPbbXeYndaxKt7.png " class="item-bg-cover"
+                                            alt="春季獻禮">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">春季獻禮</div>
+                                                <strong class="col-6 card-text">$ 500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="春季獻禮" data-bs-price="$500">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="recommend">季節花束</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/7eRU3Ktx6QiL3YbAgdIOt1.png" class="item-bg-cover"
+                                            alt="花開如夢">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">花開如夢</div>
+                                                <strong class="col-6 card-text">$ 720</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="花開如夢" data-bs-price="$720">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="card h-100">
+                                        <div class="recommend">季節花束</div>
+                                        <a href="#" class="fa-heart-custom"><i class="fa-regular fa-heart fa-lg toggleIcon"></i></a>
+                                        <img src="https://images.plurk.com/956csQDkCneX8px4RYgaA.png" class="item-bg-cover"
+                                            alt="春暖花香">
+                                        <div class="card-body">
+                                            <div class="row d-flex text-center my-2">
+                                                <div class="col-6 card-title h5">春暖花香</div>
+                                                <strong class="col-6 card-text">$ 800</strong>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                            <a href="#" class="btn btn-lg w-100 rounded-0 text-white p-3"
+                                                style="background-color:var(--sakuraDark)" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop" data-bs-whatever="春暖花香"  data-bs-price="$800">加入購物車</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                   
+                        </section>
+                    </div>
+                </div>  
+                 <!-- Modal -->
+                 <div>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">項目</th>
+                                              <th scope="col">名稱</th>
+                                              <th scope="col">件數</th>
+                                              <th scope="col">金額</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <!-- 動態插入資料 -->                      
+                                          </tbody>
+                                        </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                                    <button type="button" class="btn btn-primary">確定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary text-white"> <i class="fa-solid fa-angles-left"></i>  </button>
+                        <button type="button" class="btn btn-outline-primary"> 1 </button>
+                        <button type="button" class="btn btn-outline-primary"> 2 </button>
+                        <button type="button" class="btn btn-outline-primary"> 3 </button>
+                        <button type="button" class="btn btn-primary text-white"> <i class="fa-solid fa-angles-right"></i> </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="container-fluid" style="background-color:var(--sakuraDark)">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h4 class="m-0 mb-2 mb-md-0">訂閱花藝教室的郵件</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="d-flex">
+                            <label for="Email" class="form-control rounded-0 border-0" style="width:40px;"><i
+                                    class="fa-solid fa-envelope"></i></label>
+                            <input class="form-control rounded-0 border-0" type="email" id="Email" placeholder="輸入電子郵件"
+                                aria-label="Email">
+                            <button class="btn btn-warning rounded-0 border-0" type="submit"><i
+                                    class="fa-solid fa-arrow-right" style="color:white"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-2" style="background-color:var(--sakuraPink)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="playwrite-de-va-guides-regular">Flower Art classroom</h3>
+                        </div>
+                        <ul class="list-unstyled ">
+                            <li><a href="tel:07-1234-5678" title="電話"
+                                    class="text-decoration-none link-color">07-1234-5678</a></li>
+                            <li><a href="mailto:FlowerArt @email.com" title="Email"
+                                    class="text-decoration-none link-color">FlowerArt @email.com</a></li>
+                            <li><a href="#" title="地址" class="text-decoration-none link-color">362 苗栗縣頭屋鄉飛鳳3號</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 vertical-content text-end text-md-start">
+                        <h3 class=""
+                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;line-height: 2.5rem;">
+                            每天都是<br>　　　送花的好日子</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-secondary">
+            <div class="container">
+                <div class="d-flex justify-content-between py-3">
+                    <div>
+                        <a href="#" title="instagram"><i class="fa-brands fa-instagram fa-lg pe-2 link-color"></i></a>
+                        <a href="#" title="twitter"><i class="fa-brands fa-twitter fa-lg link-color"></i></a>
+                    </div>
+                    <small class="text-color">© 2025 FlowerArt* All Rights Reserved</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 引用 Bootstrap 的 JavaScript（包含 Popper.js） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--custom JS -->
+    <script src="src/js/custom.js"></script>
+
+</body>
+
+</html>
