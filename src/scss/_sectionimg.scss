@@ -218,3 +218,11 @@
     line-height: 2rem;
     letter-spacing: 0.2rem;
 }
+.btn-hover{
+    background-color: var(--sakuraDark);
+}
+
+.btn-hover:hover {
+    background-color: var(--sakuraDarker);
+    /* 滑鼠懸停時的背景色 */
+}
