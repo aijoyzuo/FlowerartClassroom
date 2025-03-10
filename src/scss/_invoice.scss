@@ -1,0 +1,20 @@
+/* 預設狀態（未選中） */
+.nav-tabs .nav-link {
+    color: $sakuraDarker; /* 文字顏色（灰色） */
+    background-color: $sakuraLightPink; /* 背景顏色 */
+    border-color: $sakuraLightPink; /* 邊框顏色 */
+}
+
+/* 滑鼠懸停時 */
+.nav-tabs .nav-link:hover {
+    color: $textColor; /* 藍色 */
+    background-color: $sakuraLightPink;
+    border-color: $sakuraLightPink;
+}
+
+/* 被選中（active） */
+.nav-tabs .nav-link.active {
+    color: white; /* 選中時文字變白 */
+    background-color: $sakuraDarker; /* 選中時背景變藍 */
+    border-color: $sakuraDarker; /* 邊框變藍 */
+}

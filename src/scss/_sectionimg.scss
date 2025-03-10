@@ -1,0 +1,257 @@
+.title-bg-image {
+    background-size: cover;
+    background-position: center center;
+    position: center center;
+    min-height: 400px;
+}
+
+/* 預設無負邊距 */
+.custom-margin {
+    margin-top: 0;
+}
+
+/* 僅在螢幕寬度大於 md（768px）時生效 */
+@media (min-width: 768px) {
+    .custom-margin {
+        margin-top: -90px;
+    }
+
+}
+
+.text-color {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $textColor;
+}
+
+.h3-bg-cover {
+    width: 100%;
+    min-height: 256px;
+    object-fit: cover;
+    /* 確保圖片填滿容器且不變形 */
+    filter: blur(4px);
+    transition: filter 0.5s ease;
+    /* 添加模糊過渡動畫 */
+    position: relative;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    /* 垂直方向，從右到左 */
+    text-orientation: upright;
+    /* 讓文字直立，而非旋轉 */
+    position: absolute;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $sakuraLightPink;
+    letter-spacing: 0.5rem;
+    transition: color 0.5s ease;
+    /* 過渡文字顏色 */
+}
+
+
+
+
+/* 圖片容器樣式 */
+.image-wrapper {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    /* 容器寬度，可根據需要調整 */
+    height: 256px;
+    /* 固定高度 */
+    overflow: hidden;
+    /* 確保內容不會超出容器 */
+}
+
+/* 半透明覆蓋層 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($sakuraDark, 0.6);
+    /* 初始為半透明粉色 */
+    transition: background-color 0.5s ease;
+    /* 過渡為黃色 */
+    pointer-events: none;
+    /* 確保覆蓋層不阻止鼠標事件 */
+}
+
+/* Hover 效果 */
+.image-wrapper:hover .h3-bg-cover {
+    filter: blur(0);
+    /* 清晰化圖片 */
+}
+
+.image-wrapper:hover .overlay {
+    background-color: rgba($sakuraPink, 0.8);
+    /* 半透明黃色 */
+}
+
+.card:hover .vertical-text {
+    color: $sakuraDarker;
+}
+
+@media(min-width: 768px) {
+    .vertical-content {
+        writing-mode: vertical-rl;
+        /* 垂直方向，從右到左 */
+        text-orientation: upright;
+        /* 讓文字直立，而非旋轉 */
+    }
+}
+
+.container-fluid-custom {
+    background-color: $sakuraPink;
+}
+
+.h1-custom {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.p-custom {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    height: 200px;
+}
+
+@media (min-width: 768px) {
+    .p-custom {
+        height: 300px;
+    }
+}
+
+.break-vertical-block {
+    height: 300px;
+    /* 確保小螢幕下有固定高度 */
+
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    /* 讓背景圖片填滿父容器 */
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+
+@media(min-width:768px) {
+    .break-vertical-block {
+        position: relative;
+        /*相對定位作為參考*/
+    }
+
+    .bg-cover {
+        position: absolute;
+        /*絕對定位覆蓋父容器 */
+        height: 140%;
+        top: -24px;
+        bottom: -24px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .d-sm-flex {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .d-sm-flex-reverse {
+        display: flex;
+        justify-content: end;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+
+
+
+
+.item-bg-cover {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.items .card {
+    position: relative;
+}
+
+.recommend {
+    writing-mode: vertical-rl;
+    /* 垂直方向，從右到左 */
+    text-orientation: upright;
+    /* 讓文字直立，而非旋轉 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: $sakuraPink;
+    position: absolute;
+    background-color: $sakuraDarker;
+    padding: 8px;
+    height: 120px;
+    left: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /*[水平偏移量] [垂直偏移量] [模糊半徑] [擴展半徑] [顏色]*/
+}
+
+.fa-heart-custom {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    color: $sakuraDark;
+    cursor: pointer;
+}
+
+.link-color {
+    color: $textColor;
+}
+
+/*shop*/
+.shop-bg-image {
+    background-image:url(https://images.plurk.com/44PorWOskXfjpXYaXZJw1f.jpg );
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+    display: flex;
+    justify-content: start;
+
+    @media(min-width:768px) {
+        justify-content: end;
+    }
+}
+
+.shop-slogan {
+    color: $sakuraPink;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.shop-menu {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+
+.btn-hover{
+    background-color: var(--sakuraDark);
+}
+
+.btn-hover:hover {
+    background-color: var(--sakuraDarker);
+    /* 滑鼠懸停時的背景色 */
+}

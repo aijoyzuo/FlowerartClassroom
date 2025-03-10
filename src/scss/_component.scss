@@ -1,0 +1,15 @@
+.box{
+    height:10px;
+}
+.whenhover {
+    &:hover {
+        box-shadow: 0px 7px 10px rgba(216, 198, 188, 0.5);
+    }
+}
+
+.move{
+    transition: transform 0.5s ease-out;
+}
+.move.scrolled {
+    transform: translateY(-8px);
+}
