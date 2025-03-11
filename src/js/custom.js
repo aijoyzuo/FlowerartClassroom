@@ -46,14 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/*登入跳轉*/
 
-document.getElementById("loginBtn").addEventListener("click", function() {
-    alert("登入成功"); // 顯示成功訊息
-    setTimeout(function() {
-        window.location.href = "shoppingcart.html"; // 跳轉到購物車頁面
-    }); 
-});
 
 
 /*加入購物車部分*/
@@ -100,12 +93,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function showAllProducts() {
       allProductsTab.classList.add("active");
       categoryTabs.forEach(tab => tab.classList.remove("active"));
-      allPanes.forEach(pane => pane.classList.add("show", "active"));
+      allPanes.forEach(pane => {
+        pane.classList.add("show", "active");
+        pane.style.display = "block"; // 確保顯示
+      });
     }
   
     // 點擊「所有商品」
     allProductsTab.addEventListener("click", function (event) {
-      event.preventDefault(); // 防止頁面跳轉
+      //event.preventDefault(); // 防止頁面跳轉
       showAllProducts();
     });
   
@@ -113,10 +109,14 @@ document.addEventListener("DOMContentLoaded", function () {
     categoryTabs.forEach(tab => {
       tab.addEventListener("click", function () {
         allProductsTab.classList.remove("active"); // 移除「所有商品」的選中狀態
-        allPanes.forEach(pane => pane.classList.remove("show", "active")); // 隱藏所有內容
+        allPanes.forEach(pane => {
+            pane.classList.remove("show", "active");
+            pane.style.display = "none";
+        }); // 隱藏所有內容
         const targetPane = document.querySelector(this.getAttribute("href"));
         if (targetPane) {
           targetPane.classList.add("show", "active"); // 顯示對應內容
+          targetPane.style.display = "block";
         }
       });
     });
